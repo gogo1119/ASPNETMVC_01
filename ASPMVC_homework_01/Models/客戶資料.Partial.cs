@@ -33,7 +33,7 @@ namespace ASPMVC_homework_01.Models
         public string 地址 { get; set; }
 
         [StringLength(250, ErrorMessage = "欄位長度不得大於 250 個字元")]
-        [EmailAddress(ErrorMessage = "Email格式不正確")]
+        [EmailAddress(ErrorMessage = "Email格式錯誤")]
         public string Email { get; set; }
         [Required]
         public bool 是否已刪除 { get; set; }
